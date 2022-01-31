@@ -1,16 +1,34 @@
-### Hi there 👋
+```php
+<?php
+namespace Edda\Van\Appenzeller;
+class Me
+{
+    protected $name         = "Edda";
+    protected $lazy         = false;
+    protected $loc          = "Ilfov, Romania";
+    protected $age          = 22;
 
-<!--
-**TransDeveloper/TransDeveloper** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+    public function __construct()
+    {
+        $this->lazy = true;
+    }
 
-Here are some ideas to get you started:
+    public function getTinderProfile(): String{
+        return $this->name . ", " . $this->age . ", " . $this->loc;
+    }
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+    public function is2b2tplayer(): Bool{
+        return true;
+    }
+
+    public function getName(){
+        return $this->name;
+    }
+
+    private function girlCock(): Bool{
+        return true;
+    }
+}
+```
+
+Note, i don't use github alot.
